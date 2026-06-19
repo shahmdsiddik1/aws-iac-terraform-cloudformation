@@ -46,7 +46,21 @@ cloudformation-project/
 ---
 
 ## Terraform Deployment
+Skills Demonstrated
+Infrastructure as Code
+Terraform
+CloudFormation
+AWS EC2
+AWS S3
+Security Groups
+Automation
+Cloud Engineering
 
+Author
+
+SHAHA MOHAMMAD SIDDIK KAYYUM
+
+Cloud & DevOps Engineer (Learner)
 ```bash
 terraform init
 terraform plan
