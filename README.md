@@ -1,34 +1,53 @@
-# aws-iac-terraform-cloudformation
-AWS Infrastructure as Code
-==========================
+# AWS Infrastructure as Code (IaC)
+
+## Project Overview
+
+This project demonstrates Infrastructure as Code (IaC) by provisioning AWS resources using both Terraform and AWS CloudFormation.
+
+The project automatically creates cloud infrastructure instead of manually creating resources through the AWS Console.
+
+---
+
+## Architecture
 
 Terraform
+        │
+        ▼
+EC2 Instance
+        │
+Security Group
+
 CloudFormation
-AWS
-EC2
-S3
-Security Groups
-Infrastructure as Code
+        │
+        ▼
+S3 Bucket
 
-Project Architecture
+---
 
-[screenshot]
+## AWS Services Used
 
-Project Structure
+- EC2
+- Security Groups
+- S3
+- Terraform
+- AWS CloudFormation
+- IAM
+
+---
+
+## Project Structure
 
 terraform-project/
+│── main.tf
+
 cloudformation-project/
+│── s3-bucket.yaml
 
-How to Run
+---
 
+## Terraform Deployment
+
+```bash
 terraform init
 terraform plan
 terraform apply
-
-CloudFormation
-
-aws cloudformation create-stack ...
-
-Screenshots
-
-...
